@@ -29,7 +29,7 @@ x,x_test,y,y_test=train_test_split(datainput1,dataoutput1,test_size=0.2)
 #find optimal estimator
 estnum=2
 scores=[]
-dsa=1
+das=1
 for das in range(25):
     rf1=RandomForestClassifier(n_estimators=estnum,criterion='gini', max_depth=5)
     rf1=rf1.fit(datainput1,dataoutput1)
